@@ -1,7 +1,9 @@
+import PostComponent from "../components/PostComponent";
 function Home() {
   return (
     <div>
-Home
+      <PostComponent/>
+   
     </div>
   );
 }
