@@ -1,9 +1,9 @@
-function Post() {
-    return (
-      <div>
-  
-      </div>
-    );
-  }
-  
-  export default Post;
+function Home() {
+  return (
+    <div>
+Home
+    </div>
+  );
+}
+
+export default Home;
