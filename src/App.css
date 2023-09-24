@@ -152,9 +152,10 @@ img {
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
-  width: 320px;
+  width: 300px;
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
 }
 
 .title {
@@ -190,7 +191,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
   outline: 0;
-  width: 93%;
+  width: 100%;
   background-color: transparent;
 }
 
@@ -225,6 +226,8 @@ img {
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;
+  width:270px;
+  margin-left: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -250,4 +253,81 @@ img {
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Profile Styling */
+.profile-img{
+  width: 80px;
+  height: 80px;
+  margin-top: 40px;
+}
+.profile-name{
+  font-size: 30px;
+  font-weight: 600;
+  margin-right: 7px;
+}
+.profile-username{
+  font-size: 20px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.followers{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  align-items: center;
+  text-align: center;
+  background-color: aliceblue;
+  background-color: #efefef;
+  padding: 20px;
+}
+.post-text{
+  font-weight: 500;
+  opacity: 0.5;
+  font-size: 20px;
+}
+.post-count{
+  font-weight: bold;
+  font-size: 22px;
+}
+.my-posts{
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 7%;
+}
+.profile-data{
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  justify-content: center;
+}
+.tick{
+  width: 35px;
+  height: 35px;
+  margin-top: 7px;
+}
+
+
+/* Header styling */
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+  /* margin-top: 10px; */
+  margin-bottom: 20px;
+  background-color: #efefef;
+  padding: 15px;
+}
+.message{
+  width: 30px;
+  height: 30px;
+}
+.header-text{
+  font-size: x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+
 }

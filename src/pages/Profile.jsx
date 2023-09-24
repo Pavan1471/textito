@@ -1,8 +1,9 @@
-
+import User from "../components/User";
 function Profile() {
     return (
-      <div>
-  Profile
+   <div>
+     <User/>  
+  
       </div>
     );
   }

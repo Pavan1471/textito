@@ -1,6 +1,7 @@
 function Post() {
     return (
       <>
+<center>
 <div class="card">
   <span class="title">Create Post</span>
   <form class="form">
@@ -16,10 +17,12 @@ function Post() {
     <textarea  id="comment" name="comment" rows="5" required=""></textarea>
     <label for="comment">Text</label>
 </div>
+    <center>
     <button type="submit">Post</button>
+    </center>
   </form>
 </div>
-
+</center>
       </>
     );
   }

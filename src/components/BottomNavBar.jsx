@@ -16,6 +16,7 @@ import { FaBeer } from "react-icons/fa";
 // // import {} from "react-icons/ai";
 import home from "./home.png";
 // import './App.css';
+const icons = [AiFillLinkedin];
 const BottomNavBar = () => {
   return (
     <>
@@ -24,7 +25,7 @@ const BottomNavBar = () => {
       <div className="footer">
         {/* <div className="nav"> */}
         <Link to="/">
-          <img className="foot" src={<AiFillLinkedin/>}></img>
+          <img className="foot" src={home}></img>
         </Link>
 
         <Link to="/search">

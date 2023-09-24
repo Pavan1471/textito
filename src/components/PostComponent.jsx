@@ -1,4 +1,5 @@
-import user from "./user.png";
+// import user from "./user.png";
+import user from "./man.png";
 // import {useState} from 'react'
 import like from "./like.png";
 import comment from "./comment.png";
