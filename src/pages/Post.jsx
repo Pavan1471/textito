@@ -1,4 +1,29 @@
+import { useState } from "react";
+import axios  from "axios";
 function Post() {
+  const [post_id, setPost_id] = useState("");
+  const [post_data, setPost_data] = useState("");
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const data = localStorage.getItem('token');
+    console.log(data)
+    setPost_id(data);
+    // setIsLoading(true);
+    try {
+      const username = localStorage.getItem("username")
+      console.log(username)
+      const response = await axios.post("http://localhost:5000/createpost", {
+        post_id: username,
+        post_data: post_data,
+      });
+      console.log(response.status);
+      console.log(response.data);
+      console.log(post_data);
+    }
+    catch{
+      console.log("ji")
+    }
+  }
     return (
       <>
 <center>
@@ -14,11 +39,11 @@ function Post() {
     <label for="email">Tags</label>
     </div>
 <div class="group">
-    <textarea  id="comment" name="comment" rows="5" required=""></textarea>
+    <textarea onChange={(e) => setPost_data(e.target.value)} id="comment" name="comment" rows="5" required=""></textarea>
     <label for="comment">Text</label>
 </div>
     <center>
-    <button type="submit">Post</button>
+    <button onClick={handleSubmit} type="submit">Post</button>
     </center>
   </form>
 </div>
