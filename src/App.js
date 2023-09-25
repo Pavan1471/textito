@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Post from './pages/Post';
 import Profile from './pages/Profile';
 import Search from './pages/Search';
+import Register from "./pages/Register";
+import Login from './pages/Login'
 import BottomNavBar from './components/BottomNavBar';
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
          <Route path="/post" element={<Post/>}/>
         <Route path="/activity" element={<Activity />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="register" element={<Register/>} />
+          <Route path="login" element={<Login/>} />
       </Route>
     </Routes>
   </BrowserRouter>

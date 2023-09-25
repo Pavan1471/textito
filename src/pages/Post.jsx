@@ -4,7 +4,7 @@ function Post() {
 <center>
 <div class="card">
   <span class="title">Create Post</span>
-  <form class="form">
+  <form class="forms">
     <div class="group">
     <input type="text" required=""></input>
     <label for="name">Category</label>

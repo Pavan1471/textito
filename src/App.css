@@ -164,7 +164,7 @@ img {
   text-align: center;
 }
 
-.form {
+.forms {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -174,7 +174,7 @@ img {
   position: relative;
 }
 
-.form .group label {
+.forms .group label {
   font-size: 14px;
   color: rgb(99, 102, 102);
   position: absolute;
@@ -184,8 +184,8 @@ img {
   transition: all .3s ease;
 }
 
-.form .group input,
-.form .group textarea {
+.forms .group input,
+.forms .group textarea {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -195,17 +195,17 @@ img {
   background-color: transparent;
 }
 
-.form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label {
+.forms .group input:placeholder-shown+ label, .forms .group textarea:placeholder-shown +label {
   top: 10px;
   background-color: transparent;
 }
 
-.form .group input:focus,
-.form .group textarea:focus {
+.forms .group input:focus,
+.forms .group textarea:focus {
   border-color: #3366cc;
 }
 
-.form .group input:focus+ label, .form .group textarea:focus +label {
+.forms .group input:focus+ label, .forms .group textarea:focus +label {
   top: -10px;
   left: 10px;
   background-color: #fff;
@@ -214,12 +214,12 @@ img {
   font-size: 14px;
 }
 
-.form .group textarea {
+.forms .group textarea {
   resize: none;
   height: 100px;
 }
 
-.form button {
+.forms button {
   background-color: #3366cc;
   color: #fff;
   border: none;
@@ -232,7 +232,7 @@ img {
   transition: all 0.3s ease;
 }
 
-.form button:hover {
+.forms button:hover {
   background-color: #27408b;
 }
 
@@ -331,3 +331,4 @@ img {
   font-weight: bolder;
 
 }
+
