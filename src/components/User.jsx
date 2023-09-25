@@ -20,14 +20,16 @@ function User() {
         // console.log(users)
 
      
-        console.log(username)
+        
         setUser(res.data);
       })
       .catch((err) => {
         console.log(err);
       });
-    const username =  localStorage.setItem('username',user.email);
+   
   }, []);
+  const username =  localStorage.setItem('username',user.email);
+  console.log(username);
 
   return (
     <>
