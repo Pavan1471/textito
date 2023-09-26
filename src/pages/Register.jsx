@@ -16,6 +16,7 @@ function Register(){
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState(""); 
 
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     setIsLoading(true);
@@ -29,7 +30,20 @@ function Register(){
         password: password,
       });
       console.log(response.data);
-      toast.success("Registration successful");
+      console.log(response.status);
+      if(response.status==200){
+        navigate("/login");
+        console.log(response.status);
+        toast.success("Registration successfull");
+        
+      }
+      else{
+        console.log(response.status);
+        toast.error("Registration Failed or User already exists");
+
+      }
+  
+      
      
     } catch (error) {
       console.error("Error:", error.response.data);
@@ -38,7 +52,7 @@ function Register(){
     finally{
       setIsLoading(false);
     }
-    navigate("/login");
+  
   };
   return(
     <>

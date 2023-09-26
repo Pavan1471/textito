@@ -9,7 +9,6 @@ import { useNavigate } from "react-router-dom";
 // import { Skeleton, Spinner } from '@chakra-ui/react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 function Login() {
   // const notify = () => toast.success("Log in successful");
   const navigate = useNavigate();
