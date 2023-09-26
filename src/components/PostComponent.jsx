@@ -1,10 +1,10 @@
 // import user from "./user.png";
-import userss from "./man.png";
+import userss from "./asserts/man.png";
 // import {useState} from 'react'
-import like from "./like.png";
+import like from "./asserts/like.png";
 // import { useState } from "react";
 import axios from "axios";
-import comment from "./comment.png";
+import comment from "./asserts/comment.png";
 import Comments from "./Comments";
 import { useState, useEffect } from "react";
 
@@ -42,7 +42,7 @@ function PostComponent() {
             <div className="post">
               <img className="user-img" src={userss}></img>
               <div className="post-head">
-                <div>Pavan Kumar</div>
+                <div>{user.post_id}</div>
                 <div>Nellore</div>
               </div>
 

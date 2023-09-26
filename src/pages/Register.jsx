@@ -11,8 +11,8 @@ import 'react-toastify/dist/ReactToastify.css';
 function Register(){
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
-  const [firstname, setFirstname] = useState("");
-  const [lastname, setLastname] = useState("");
+  const [fullname, setFullname] = useState("");
+  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState(""); 
 
@@ -23,8 +23,8 @@ function Register(){
     // console.log(mobile);
     try {
       const response = await axios.post("http://localhost:5000/register", {
-        firstname: firstname,
-        lastname: lastname,
+        fullname: fullname,
+        username: username,
         email: email,
         password: password,
       });
@@ -44,42 +44,42 @@ function Register(){
     <>
     <ToastContainer />
       <center>
-      <form class="form">
-    <p class="title">Register </p>
+      <form class="form1">
+    <p class="titles">Register </p>
     <p class="message">Signup now and get full access to our app. </p>
         <div class="flex">
         <label>
-            <input required="" placeholder="" type="text" class="input"
-             value={firstname}
-             onChange={(e) => setFirstname(e.target.value)}></input>
+            <input required="" placeholder="Full Name" type="text" class="inputss"
+             value={fullname}
+             onChange={(e) => setFullname(e.target.value)}></input>
 
-            <span>Firstname</span>
+            {/* <span>Firstname</span> */}
         </label>
 
         <label>
-            <input required="" placeholder="" type="text" class="input"
-             value={lastname}
-             onChange={(e) => setLastname(e.target.value)}></input>
-            <span>Lastname</span>
+            <input required="" placeholder="Username" type="text" class="inputss"
+             value={username}
+             onChange={(e) => setUsername(e.target.value)}></input>
+            {/* <span>Lastname</span> */}
         </label>
     </div>  
             
     <label>
-        <input required="" placeholder="" type="email" class="input"
+        <input required="" placeholder="Email" type="email" class="inputss"
          value={email}
          onChange={(e) => setEmail(e.target.value)}></input>
-        <span>Email</span>
+        {/* <span>Email</span> */}
     </label> 
         
     <label>
-    <input required="" placeholder="" type="password" class="input"
+    <input required="" placeholder="Password" type="password" class="inputss"
     value={password}
          onChange={(e) => setPassword(e.target.value)} ></input>
-        <span>Password</span>
+        {/* <span>Password</span> */}
     </label>
     <label>
-        <input required="" placeholder="" type="password" class="input"></input>
-        <span>Confirm password</span>
+        <input required="" placeholder="Confirm password" type="password" class="inputss"></input>
+        {/* <span>Confirm password</span> */}
     </label>
     <button onClick={handleSubmit} class="submit">
     <div>

@@ -1,8 +1,8 @@
 import { Outlet, Link } from "react-router-dom";
-import add from './plus.png'
-import user from './user.png'
-import search from './search.png'
-import activity from './bell.png'
+import add from './asserts/plus.png'
+import user from './asserts/user.png'
+import search from './asserts/search.png'
+import activity from './asserts/bell.png'
 import {AiFillLinkedin} from "react-icons/ai";
 import { FaBeer } from "react-icons/fa";
 // import {AiFillHome} from "react-icons/ai";
@@ -14,7 +14,7 @@ import { FaBeer } from "react-icons/fa";
 // // import {} from "react-icons/ai";
 // // import {} from "react-icons/ai";
 // // import {} from "react-icons/ai";
-import home from "./home.png";
+import home from "./asserts/home.png";
 // import './App.css';
 const icons = [AiFillLinkedin];
 const BottomNavBar = () => {

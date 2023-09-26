@@ -2,13 +2,13 @@ import React from "react";
 // import plus from "./plus.png";
 import axios from "axios";
 import './login.css'
+
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 // import LoadingOverlay from 'react-loading-overlay';
 // import { Skeleton, Spinner } from '@chakra-ui/react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
- 
 
 function Login() {
   // const notify = () => toast.success("Log in successful");
@@ -69,32 +69,32 @@ function Login() {
   <p>Some content or children or something.</p>
 </LoadingOverlay> */}
      <center>
-     <form class="form">
+     <form class="form1">
         <p class="title">Login</p>
         <p class="message">Signup now and get full access to our app. </p>
 
         <label>
           <input
             required=""
-            placeholder=""
+            placeholder="Email"
             type="email"
-            class="input"
+            class="inputss"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           ></input>
-          <span>Email</span>
+          {/* <span>Email</span> */}
         </label>
 
         <label>
           <input
             required=""
-            placeholder=""
+            placeholder="Password"
             type="password"
-            class="input"
+            class="inputss"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           ></input>
-          <span>Password</span>
+          {/* <span>Password</span> */}
         </label>
         <button onClick={handleSubmit} class="submit">
         <div>

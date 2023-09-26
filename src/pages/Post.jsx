@@ -1,6 +1,10 @@
 import { useState } from "react";
 import axios  from "axios";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function Post() {
+  const navigate = useNavigate();
   const [post_id, setPost_id] = useState("");
   const [post_data, setPost_data] = useState("");
   const handleSubmit = async (event) => {
@@ -16,6 +20,14 @@ function Post() {
         post_id: username,
         post_data: post_data,
       });
+      toast.success("Post successful");
+   
+        
+
+        setTimeout(() => {
+          navigate("/");
+          
+        }, 1000);
       console.log(response.status);
       console.log(response.data);
       console.log(post_data);
@@ -26,10 +38,11 @@ function Post() {
   }
     return (
       <>
+         <ToastContainer />
 <center>
 <div class="card">
   <span class="title">Create Post</span>
-  <form class="forms">
+  <form class="formsss">
     <div class="group">
     <input type="text" required=""></input>
     <label for="name">Category</label>

@@ -164,7 +164,7 @@ img {
   text-align: center;
 }
 
-.forms {
+.formsss {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -174,7 +174,7 @@ img {
   position: relative;
 }
 
-.forms .group label {
+.formsss .group label {
   font-size: 14px;
   color: rgb(99, 102, 102);
   position: absolute;
@@ -184,8 +184,8 @@ img {
   transition: all .3s ease;
 }
 
-.forms .group input,
-.forms .group textarea {
+.formsss .group input,
+.formsss .group textarea {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -195,17 +195,17 @@ img {
   background-color: transparent;
 }
 
-.forms .group input:placeholder-shown+ label, .forms .group textarea:placeholder-shown +label {
+.formsss .group input:placeholder-shown+ label, .forms .group textarea:placeholder-shown +label {
   top: 10px;
   background-color: transparent;
 }
 
-.forms .group input:focus,
-.forms .group textarea:focus {
+.formsss .group input:focus,
+.formsss .group textarea:focus {
   border-color: #3366cc;
 }
 
-.forms .group input:focus+ label, .forms .group textarea:focus +label {
+.formsss .group input:focus+ label, .forms .group textarea:focus +label {
   top: -10px;
   left: 10px;
   background-color: #fff;
@@ -214,12 +214,12 @@ img {
   font-size: 14px;
 }
 
-.forms .group textarea {
+.formsss .group textarea {
   resize: none;
   height: 100px;
 }
 
-.forms button {
+.formsss button {
   background-color: #3366cc;
   color: #fff;
   border: none;
@@ -232,7 +232,7 @@ img {
   transition: all 0.3s ease;
 }
 
-.forms button:hover {
+.formsss button:hover {
   background-color: #27408b;
 }
 
@@ -320,7 +320,7 @@ img {
   background-color: #efefef;
   padding: 15px;
 }
-.message{
+.messages{
   width: 30px;
   height: 30px;
 }
@@ -365,4 +365,95 @@ img {
   transform: scale(1.1);
   color: rgb(255, 255, 255);
   background-color: blue;
+}
+
+
+/* Register Forms */
+.form1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.titles{
+  font-size: 28px;
+  color: royalblue;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.titles::before,.titles::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: royalblue;
+}
+
+.titles::before {
+  width: 18px;
+  height: 18px;
+  background-color: royalblue;
+}
+
+.titles::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message, .signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: royalblue;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+section
+.form1 label {
+  position: relative;
+}
+
+.form1 label .inputss {
+  width: 90%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form1 label .inputss + span {
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
 }

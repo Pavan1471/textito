@@ -1,5 +1,5 @@
-import users from "./man.png";
-import verified from './verified.png'
+import users from "./asserts/man.png";
+import verified from './asserts/verified.png'
 import PostComponent from "./PostComponent";
 import React from "react";
 import { useEffect, useState } from "react";
@@ -28,7 +28,7 @@ function User() {
       });
    
   }, []);
-  const username =  localStorage.setItem('username',user.email);
+  const username =  localStorage.setItem('username',user.fullname);
   console.log(username);
 
   return (
@@ -37,10 +37,10 @@ function User() {
       <div className="profile-head">
       <img className="profile-img" src={users}></img>
    <div className="profile-data">
-   <div className="profile-name">{user.email}</div>
+   <div className="profile-name">{user.fullname}</div>
     <img className="tick" src={verified}></img>
    </div>
-    <div className="profile-username">@Pavan147</div>
+    <div className="profile-username">@{user.username}</div>
 
       </div>
       </center>
