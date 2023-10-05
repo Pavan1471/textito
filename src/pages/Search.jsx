@@ -32,7 +32,7 @@ function Search() {
 
 </center>
       </div>
-      <div>{search}</div>
+      {/* <div>{search}</div> */}
 <br></br>
 <FollowUser/>
 

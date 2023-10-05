@@ -26,7 +26,7 @@ function FollowUser() {
  userArray.reverse();
   return (
     
-      <div style={{marginBottom:"10px"}}>
+      <div style={{marginBottom:"5px"}}>
         {userArray.map((user) => (
           <>
           <div className="post-containerss">

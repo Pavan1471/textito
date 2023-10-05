@@ -50,7 +50,7 @@ function User() {
           <div className="post-text">Posts</div>
         </div>
         <div>
-          <div className="post-count">107k</div>
+          <div className="post-count">999k</div>
           <div className="post-text">Followers</div>
         </div>
         <div>
