@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import FollowUser from "../components/FollowUser";
 function Search() {
   const [search, setSearch] = useState("");
 
@@ -32,7 +33,8 @@ function Search() {
 </center>
       </div>
       <div>{search}</div>
-
+<br></br>
+<FollowUser/>
 
 </>
 

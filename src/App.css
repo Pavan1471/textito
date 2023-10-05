@@ -231,11 +231,28 @@ img {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
+.followbtn{
+  margin-left: 68%;
+  position:absolute;
+  border: none;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #4e99e9;
+}
 .formsss button:hover {
   background-color: #27408b;
 }
-
+.post-containerss{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #efefef;
+  padding: 20px;
+  margin-left: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
 
 
 
