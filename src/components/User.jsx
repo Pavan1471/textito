@@ -2,6 +2,7 @@ import users from "./asserts/man.png";
 import verified from './asserts/verified.png'
 import PostComponent from "./PostComponent";
 import React from "react";
+import Mypost from "./Mypost";
 import { useEffect, useState } from "react";
 import axios from "axios";
 function User() {
@@ -64,6 +65,7 @@ function User() {
 
       <br></br>
       <PostComponent/>
+      {/* <Mypost/> */}
     </>
   );
 }
